@@ -1,6 +1,6 @@
-This is Cake Website code 
+<p>This is Cake Website code 
 Tech Stack
-Node.js Express MySQL
+Node.js Express MySQL</p>
 
-To start server.js 
-nodemon server.js
+<h2>To start server.js </h2>
+<h6>nodemon server.js</h6>
