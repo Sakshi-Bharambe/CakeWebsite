@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+body {
+  background: url(/Images/shop9.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.topnav a {
+
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  height: 60px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff9900;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+

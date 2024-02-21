@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="\css\style.css">
+<link rel="stylesheet" href="\css\header.css">
+
+<style>
+
+body {
+background-image: url(/Images/shop9.jpg);
+background-repeat: no-repeat;
+background-size: 100% 85%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+</style>
+<link rel = "icon" href = "\Images\2611_Sakshi Bharambe_HCI (1).png" 
+        type = "image/x-icon">
+        
+</head>
+<body >
+
+<div class="topnav">
+  
+
+  <a href=Main.html>
+  <img src="\Images\2611_Sakshi Bharambe_HCI (1).png" id="logo"></a>
+
+  <div class="topnav-right">
+    <a  href="/Main">Home</a>
+  <a class="active" href="#Login">Login</a>
+  <a  href="/Contact">Contact</a>
+    
+    <a href="/About">About</a>
+  </div>
+</div>
+<p align="center" style="color:black; font-size:2vw; font-family: 'Georgia (serif)';"><br><strong>LOGIN</strong></p>
+  
+<div style="padding-left:16px">
+  
+</div>
+<div class="first" style="border:#333; border-width:7px; border-style:solid;">
+<form class="second" action="/login" method="POST" style="font-size: large;" >
+      <table class="tb">
+       
+            <div align="center" style="background-color: lightcoral; font-size: 30px;">
+            <%if(message!=''){ %>
+            <p ><%=message%></p>
+            <%}%>
+            </div>
+         
+        <tr>
+          <td>
+            <label>Name</label>
+          </td>
+          <td>
+            <input type="name" name="Name" required placeholder="Name" id="Name">
+            <span id="name" class="text-danger font-weight-bold"></span>
+
+          </td>
+        </tr>
+        
+        <tr>
+            <td>
+              <label>Email</label>
+            </td>
+            <td>
+              <input type="email" name="Email" placeholder="Email" id="Email">
+              <span id="eamils" class="text-danger font-weight-bold"></span>
+  
+            </td>
+          </tr>
+        <tr>
+          <td>
+            <label for="">Password</label>
+          </td>
+          <td>
+            <input type="password" name="pass" placeholder="password" id="pass">
+            <span id="phones" class="text-danger font-weight-bold"></span>
+          </td>
+        </tr>
+        <tr>
+            <td>
+            <label><a href="/Register" style="text-decoration: none" >Sign up ?</a></label>
+            </td>
+            </tr>
+            </table>
+            <button style="align-self: center ;"type="submit" name="save" id="i1" placeholder="Register"; margin=20px>Login</button>
+            </form>
+       
+        
+     
+      
+</div>
+
+
+<footer><%- include('../partials/footer'); %></footer>
+</body>
+</head>

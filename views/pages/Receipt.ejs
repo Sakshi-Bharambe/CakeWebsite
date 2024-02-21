@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<head>
+<title>Receipt</title>
+<link rel="stylesheet" href="\css\style.css">
+<link rel="stylesheet" href="\css\header.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<style>
+
+
+	
+
+
+body {
+	background-image: url(/Images/shop9.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.city {
+  background-color: mediumseaGreen;
+  color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+#logo{
+
+	width: 60px;
+	height: 50px;
+	
+}
+.row1:after{
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 20px;
+  
+  margin-left: 2px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 40px;
+}
+.column2 {
+	text-align: center;
+	margin-left: 400px;
+	color: black;
+    float: left;
+  width: 25%;
+  padding: 10px;
+  padding-left: 50px;
+   
+  height: 358px;
+}
+.column1 {
+	
+	color: black;
+    float: left;
+  width: 25%;
+  padding: 10px;
+   
+  height: 358px;
+}
+.column {
+	color: black;
+  float: left;
+  width: 25%;
+  padding: 10px;
+   
+  height: 358px;
+}
+.btn1{
+
+width: 80px;
+height: 30px;
+background-color: #ff9900 ;
+ box-shadow: 5px 10px #888888;
+font-size: 90%;
+text-align: center;
+}
+.btn1:hover{
+
+ background-color: rgb(255, 115, 100);
+
+}
+.h{
+	color:#660000;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 40%;
+  width: 20%;
+  background-color: #e6b800;
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 30px;
+}
+.c5{
+  margin-right: 100px;
+  margin-left: 500px;
+ }
+</style>
+<link rel = "icon" href = "\Images\2611_Sakshi Bharambe_HCI (1).png" 
+        type = "image/x-icon">
+      
+</head>
+<body>
+
+<div class="topnav">
+  
+
+  <a href=/Main>
+	<img src="\Images\2611_Sakshi Bharambe_HCI (1).png" id="logo"></a>
+
+    <div class="topnav-right">
+        <a  href="/Main">Home</a>
+    <a  href="/Product">Product</a>
+    <a  href="/Contact">Contact</a>
+      <a href="/logout-user">Logout</a>
+      <a href="/About">About</a>
+    </div>
+</div>
+
+<div  align="center" style=" padding-top: 5%;padding-left: 25%; width: 1050px;">
+<div class="card w-50 text-white " style="background-color: #656A0B">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 200%">Bill</h5><br>
+      <form style="font-size: large;" method="POST" action="/Pay" >
+    <table class="tb" >
+      
+        <tr>
+          <td>
+            <label for="">Email: </label>
+          </td>
+          <td>
+            <input type="text" name="Email" placeholder="Name" id="names">
+            <span id="username" class="text-danger font-weight-bold"></span>
+          </td>
+        </tr>
+
+ <tr>
+         <td>
+            <label for="">Address: </label>
+          </td>
+          <td>
+            <input type="text" name="name" placeholder="Name" id="address">
+            <span id="addresss" class="text-danger font-weight-bold"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+             <label for="">Product: </label>
+           </td>
+           <td>
+             <input type="text" name="ProductName" placeholder="ProductName" id="ProductName">
+             <span id="addresss" class="text-danger font-weight-bold"></span>
+           </td>
+         </tr>
+         <tr>
+
+
+        
+
+      </table>
+    <!---<p class="card-text" style="font-size: 120%"> Customer: Taylor Swift<br> Item: <span id="namerr"></span><br><span id="namep"></span></p>-->
+    
+   <p class="card-text">Please confirm your order</p>
+   
+     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Cash On delivery
+  </label><br>
+  <input type="submit" name="save" id="i1" onclick="return myFunction()"><a href="/Contact"></a>
+   
+  </form></div>
+</div>
+</div>
+
+<!-- <div class="container text-center">
+  <div class="row">
+    <div class="col-6 col-sm-4">ITEM</div>
+    <div class="col-6 col-sm-4"><span id="namerr"></span></div>-->
+
+    <!-- Force next columns to break to new line at md breakpoint and up -->
+    <!--<div class="w-100 d-none d-md-block"></div>
+
+    <div class="col-6 col-sm-4">....</div>
+    <div class="col-6 col-sm-4"><span id="namep"></span></div>
+    <div class="w-100 d-none d-md-block"></div>
+
+    <div class="col-6 col-sm-4">....</div>
+    <div class="col-6 col-sm-4"> <input type="submit" name="save" id="i1" onclick="myFunction()"></div>
+   
+ 
+</div>
+ -->
+<br>
+</div>
+
+<h2 align="center">***Need Help ***</h2>
+<div class="c5">
+  
+  <a href="#" style="padding-right: 10px;padding-left: 20px;text-decoration: none; color: black;font-size: 25px;"><img src="\Images\whatsapp.png" width="20" height="20"> +91 78555588</a>
+  <a href="#" style="padding-right: 250px;padding-left: 20px;text-decoration: none;color: black;font-size: 25px;"><img src="\Images\mail.png" width="20" height="20"> cubiescake@g.com</a>
+ 
+
+<script>
+// function myFunction() {
+ 
+ 
+
+//   var user = document.getElementById('names').value;
+//   var add = document.getElementById('address').value;
+   
+     
+     
+//       if (user == "") {
+//         document.getElementById('username').innerHTML =" **Please fill the name field";
+//         return false;
+//       }
+//       if (add == "") {
+//         document.getElementById('addresss').innerHTML =" **Please fill the ur address field";
+//         return false;
+//       }
+//  if(document.getElementById('defaultCheck1').checked == false) {   
+
+//   alert("Please select available mode of payment");   
+
+// }
+// else{
+//    alert("Your Order is Confirmed!");
+// }
+
+// }
+ </script>
+ <!--<script type="text/javascript">
+        
+          document.getElementById("namerr").innerHTML=localStorage.getItem("names");
+        
+ document.getElementById("namep").innerHTML=localStorage.getItem("namesr");
+
+
+       </script>  -->
+
+</div>
+
+
+	
+  
+	
+
+<footer><%- include('../partials/footer'); %></footer>
+</body>
+</head>

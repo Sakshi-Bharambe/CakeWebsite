@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>CUBIES CAKE  </title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/header.css">
+<style>
+  a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.btn1{
+
+width: 80px;
+height: 30px;
+background-color: #ff9900 ;
+ box-shadow: 5px 10px #888888;
+font-size: 90%;
+text-align: center;
+}
+.btn1:hover{
+
+ background-color: rgb(255, 115, 100);
+
+}
+
+body {
+  background: url(/Images/shop9.jpg);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+
+
+
+
+.city {
+  background-color: mediumseaGreen;
+  color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+#logo{
+
+  width: 60px;
+  height: 50px;
+  
+}
+* {
+  box-sizing: border-box;
+}.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 10px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  
+  height: 358px;
+}
+<!--.sidenav {
+  
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+   /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}--->
+
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+/*.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}*/
+
+.h{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 40%;
+  width: 20%;
+  background-color: #e6b800;
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  .parts {
+ overflow: hidden;
+  background-color: #333;
+  padding-left:10px;
+}
+
+.parts a {
+
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  height: 60px;
+}
+.mid{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 40%;
+  width: 20%;
+  background-color: #e6b800;
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 30px;
+  overflow: hidden;
+
+
+}
+.mid a {
+
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  height: 60px;
+}}
+</style>
+<link rel = "icon" href = "\Images\2611_Sakshi Bharambe_HCI (1).png" 
+        type = "image/x-icon">
+<script type="text/javascript">
+//          function passvalues(ids){
+//           if(ids=="Vanilla Cake"){
+           
+//         let cakename = document.getElementById("Vanilla Cake").innerHTML;
+          
+//           localStorage.setItem("names",cakename);
+        
+//            let cakeprice = document.getElementById("Vanilla").innerHTML;
+          
+//           localStorage.setItem("namesr",cakeprice);}
+//          else if(ids=="Blackforest"){
+        
+//         let cake = document.getElementById("Blackforest").innerHTML;
+          
+//           localStorage.setItem("names",cake);
+        
+//            let price = document.getElementById("Blackforests").innerHTML;
+          
+//           localStorage.setItem("namesr",price);}
+//           else if (ids=="Pineapple Cake") {
+//              let Pineapple = document.getElementById("Pineapple Cake").innerHTML;
+          
+//           localStorage.setItem("names",Pineapple);
+        
+//            let Pineappleprice = document.getElementById("Pineapple").innerHTML;
+          
+//           localStorage.setItem("namesr",Pineappleprice);}
+
+//           else if (ids=="Pista") {
+//           let pista = document.getElementById("Pista").innerHTML;
+          
+//           localStorage.setItem("names",pista);
+        
+//            let pistaprice = document.getElementById("Pistas").innerHTML;
+          
+//           localStorage.setItem("namesr",pistaprice);}
+
+//      else if(ids="Chocolate Cupcake"){
+
+//           let Chocolate = document.getElementById("Chocolate Cupcake").innerHTML;
+          
+//           localStorage.setItem("names",Chocolate);
+        
+//            let Chocolateprice = document.getElementById("Chocolate Cupcakes").innerHTML;
+          
+//           localStorage.setItem("namesr",Chocolateprice);
+// }
+
+// else if (ids=="American Nuts") {
+//           let AmericanNuts = document.getElementById("American Nuts").innerHTML;
+          
+//           localStorage.setItem("names",AmericanNuts);
+        
+//            let American = document.getElementById("American Nutss").innerHTML;
+          
+//           localStorage.setItem("namesr",American);
+//          }
+//          if(ids=="Red Velvet"){
+//            let Vanilla = document.getElementById("Red Velvet").innerHTML;
+         
+//           localStorage.setItem("names",Vanilla);
+        
+//            let Vanillap = document.getElementById("Red Velvets").innerHTML;
+          
+//           localStorage.setItem("namesr",Vanillap);}
+
+       
+//           return false;
+//          }
+
+
+       </script> 
+
+
+</head>
+<body>
+
+<div class="topnav">
+  
+
+  <a href=Main.html>
+  <img src="\Images\2611_Sakshi Bharambe_HCI (1).png" id="logo"></a>
+
+  <div class="topnav-right">
+    <a  href="/Main">Home</a>
+  <a class="active" href="/Product">Product</a>
+  <a  href="/Contact">Contact</a>
+    <a href="/logout-user">Logout</a>
+    <a href="/About">About</a>
+  </div>
+</div>
+<div align="center" style="background-color: lightcoral; font-size: 30px; width: 500px; margin-left: 500px; ">
+  <%if(message!=''){%>
+  <p ><%=message%><%=Proname%></p>
+  <%}%>
+  </div>
+
+<br>
+</br>
+       <form action="/Product" method="post">
+        
+        <div class="h">Cake</div>
+        
+
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <h2 id="cakename" name="cakename" value="Vanilla cake">Vanilla cake</h2>
+        <img src="\Images\cake5.jpg" alt="Vanilla CAke"  value="Vanilla Cake"width="150" height="150">
+            <p id="Vanilla" name="cakep">Quantity: 1kg <br>Rs 800</br></strong>
+             
+              </p>
+             
+              
+              <div class="btn1" ><a href="/Receipt"><h2 style="text-decoration: none;" >Buy</h2></a></div>
+          </div>
+          <div class="column"  name="Blackforest" style="background-color:#bbb;">
+            <h2 id="Blackforest">Black Forest</h2>
+            <img src="\Images\blackforest.webp" alt="Vanilla CAke" width="150" height="150">
+         <p id="Blackforests">Quantity: 1/2kg<br>Rs 700</strong></p><div class="btn1"><a href="/Receipt"  ><h2 type="submit"style="text-decoration: none;" >Buy</h2></a></div>
+          </div>
+          <div class="column" style="background-color:#aaa;">
+            <h2 id="Orange cake">Choco cake</h2>
+        <img src="\Images\cake4.jpg" alt="Vanilla CAke" width="150" height="150">
+            <p id="Orange">Quantity: 1/2kg<br>Rs 500</strong>
+              </p><div class="btn1"><a href="/Receipt" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+          </div>
+          <div class="column" style="background-color:#ccc;">
+            <h2 id="Strawberry">Strawberry</h2>
+            <img src="\Images\cake2.jpg" alt="Vanilla CAke" width="150" height="150">
+        <p id="Strawberrys">Quantity: 1/2kg<br>Rs 650</strong></p><div class="btn1"><a href="/Receipt"  ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+          </div>
+        </div>
+        <br>
+        
+   
+  
+  <div class="h">Cupcake</div>
+
+  <section id="Cupcake">
+    <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Vanilla Cupcake</h2>
+<img src="\Images\cup1.jpg" alt="Vanilla Cupcake" width="150" height="150">
+    <p>Quantity:2<br>Rs 500</strong>
+      </p><div class="btn1"><a href="/Receipt" onclick="passvalues();" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Strawberry</h2>
+    <img src="\Images\pinkcup.jpg" alt="strawberry CupCake" width="150" height="150">
+ <p>Quantity: 1<br>Rs 190</strong></p><div class="btn1"><a href="/Receipt" onclick="passvalues();" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+  <div class="column" style="background-color:#ccc;" id="Icecream">
+    <h2>Chocolate Cupcake</h2>
+    <img src="\Images\Chocolate.jpg" alt="Chocolate" width="150" height="150">
+<p>Quantity: 1<br>Rs 650</strong></p><div class="btn1"><a href="/Receipt" onclick="passvalues();" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2 id="Pista Cupcake">Pista Cupcake</h2>
+    <img src="\Images\redcup.jpg" alt="Pista Icecream" width="150" height="150">
+ <p id="Pista Cupcakes">Quantity: 1<br>Rs 800</strong></p><div class="btn1"><a href="/Receipt" onclick="passvalues();" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+</div>
+  </section>
+
+<div class="h">Wedding Cakes</div>
+
+  <section id="Wedding">
+    <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 id="White cake" name="cakename">White cake </h2>
+<img src="\Images\Whitecake.jpg" alt="DairyMilk" width="150" height="150">
+    <p id="White cakes" name="cakep">Quantity:6kg<br>Rs 12000</strong>
+      </p><div class="btn1"><a href="/Receipt" onclick="passvalues('White cake');" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2 id="Rose Cake">Rose Cake</h2>
+    <img src="\Images\wed41.jpeg" alt="strawberry CupCake" width="150" height="150">
+ <p id="Rose Cakes">Quantity:5kg<br>Rs 10000</strong></p><div class="btn1"><a href="/Receipt" onclick="passvalues('Rose Cake');" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2 id="Chocolate cake">Chocolate cake</h2>
+    <img src="\Images\pink.jpeg" alt="Chocolate" width="150" height="150">
+<p id="Chocolate Cupcakes">Quantity: 2kg<br>Rs 6000</strong></p><div class="btn1"><a href="/Receipt" onclick="passvalues('Chocolate Cupcake');" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2 id="Pista">Pista</h2>
+    <img src="\Images\wedwhite.jpg" alt="Pista Icecream" width="150" height="150">
+ <p id="Pistas">Quantity: 10kg<br>Rs 30000</strong></p><div class="btn1"><a href="/Receipt" onclick="passvalues('Pista');" ><h2 style="text-decoration: none;" >Buy</h2></a></div>
+  </div>
+</div>
+  </section>
+  <script src="server.js"></script>
+</form> 
+<footer><%- include('../partials/footer'); %></footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+	background-image: url(/Images/shop9.jpg);
+background-repeat: no-repeat;
+background-size: 100% 90%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.first{
+  
+  margin: 60px 500px 250px 500px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+.tb{
+  padding-left: 50px;
+}
+
+.city {
+  background-color: mediumseaGreen;
+  color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+#logo{
+
+	width: 60px;
+	height: 50px;
+	
+}
+.row1:after{
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 20px;
+  
+  margin-left: 2px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 40px;
+}
+.column2 {
+	text-align: center;
+	margin-left: 400px;
+	color: black;
+    float: left;
+  width: 25%;
+  padding: 10px;
+  padding-left: 50px;
+   
+  height: 358px;
+}
+.column1 {
+	
+	color: black;
+    float: left;
+  width: 25%;
+  padding: 10px;
+   
+  height: 358px;
+}
+.column {
+	color: black;
+  float: left;
+  width: 25%;
+  padding: 10px;
+   
+  height: 358px;
+}
+.btn1{
+
+width: 80px;
+height: 30px;
+background-color: #ff9900 ;
+ box-shadow: 5px 10px #888888;
+font-size: 90%;
+text-align: center;
+}
+.btn1:hover{
+
+ background-color: rgb(255, 115, 100);
+
+}
+.h{
+	color:#660000;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 40%;
+  width: 20%;
+  background-color: #e6b800;
+  height: 50px;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 30px;
+}
+button{
+  background-color:  #1a0000;
+  margin-left:150px;
+  margin-top: 20px;
+  width: 100px;
+  color: white;
+  height: 50px;
+  border-radius: 20px;
+}
+td{
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+}

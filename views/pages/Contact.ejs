@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<head>
+<title> Contact</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+background-image: url(/Images/bk2.jpeg);
+background-repeat: no-repeat;
+background-size: 100% 85%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.first{
+  
+  margin: 0 500px 0 500px;
+  padding-bottom: 20px;
+}
+.div1{
+  background-color: #B9F8D3;
+  margin: 0 500px 0 500px;
+  padding-bottom: 20px;
+}
+h1{
+  
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.h12{
+  background-color: #1D5C63;
+  padding-left: 230px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.Alreadylogin{
+  padding: 50px;
+}
+.tb{
+  padding-left: 50px;
+}
+#i1{
+  margin-left: 150px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  height: 36px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff9900;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+
+p {
+  font-size: 1.875em;
+}
+
+#logo{
+
+  width: 60px;
+  height: 50px;
+  
+}
+
+.city {
+  background-color: mediumseaGreen;
+  color: white;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+
+}
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+}
+.c5{
+  margin-right: 100px;
+  margin-left: 500px;
+ }
+.c2{
+  font-size: 25px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100;
+  height: 100;
+}
+</style>
+<link rel = "icon" href = "\Images\2611_Sakshi Bharambe_HCI (1).png" 
+        type = "image/x-icon">
+</head>
+<body>
+<div class="topnav">
+  
+
+  <a href=/Main>
+    <img src="\Images\2611_Sakshi Bharambe_HCI (1).png" id="logo"></a>
+
+  <div class="topnav-right">
+    <a  href="/Main">Home</a>
+  <a  href="/Product">Product</a>
+  <a class="active">Contact</a>
+    <a href="/logout-user">Logout</a>
+    <a href="/About">About</a>
+  </div>
+</div>
+<br>
+
+
+
+<h2 align="center">YOUR FEEDBACK</h2></h2>
+<div class="first" style="border:#333; border-width:7px; border-style:solid;">
+    <h1>LEAVE US MESSAGE</h1>
+    <form class="second" action="/Contact" method="GET" style="font-size: large;" onsubmit="return myFunction()">
+      <table class="tb">
+        
+        <tr>
+          <td>
+            <label for="">Name</label>
+          </td>
+          <td>
+            <input type="text" name="name" placeholder="Name" id="name">
+            <span id="username" class="text-danger font-weight-bold"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Gender</label>
+          </td>
+          <td>
+            <label for="">male</label>
+            <input type="radio" name="gender" value="Male">
+            <label for="">female</label>
+            <input type="radio" name="gender" value="Female">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Phone</label>
+          </td>
+          <td>
+            <input type="phone" name="phnum" placeholder="Phone Number" id="phonee">
+            <span id="phones" class="text-danger font-weight-bold"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Email</label>
+          </td>
+          <td>
+            <input type="email" name="Email" placeholder="Email" id="email">
+            <span id="eamils" class="text-danger font-weight-bold"></span>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Subject</label>
+          </td>
+          <td >
+            <input type="Subject" name="Subject"  placeholder="Subject" id="sub">
+            <span id="subject" class="text-danger font-weight-bold"></span>
+          </td>
+        </tr>
+        <td>
+          <label>Message</label>
+        </td>
+        <td>
+          <input type="text" name="Password" placeholder="Message" size="50" id="message">
+          <span id="messages" class="text-danger font-weight-bold"></span>
+        </td>
+      </table>
+      <input type="submit" name="save" id="i1" ><a href="Contact.html"></a>
+    </form>
+
+  </div>
+<script>
+function myFunction() {
+ 
+
+  var user = document.getElementById('name').value;
+  var phone = document.getElementById('phonee').value;
+   var email = document.getElementById('email').value;
+    var sub = document.getElementById('sub').value;
+
+  var message = document.getElementById('message').value;
+     
+     
+     
+      if (user == "") {
+        document.getElementById('username').innerHTML =" **Please fill the name field";
+        return false;
+      }
+      if (sub == "") {
+        document.getElementById('subject').innerHTML =" **Please fill the name field";
+        return false;
+      }
+      if (message == "") {
+        document.getElementById('messages').innerHTML =" **Please fill the name field";
+        return false;
+      }
+      
+      if (email == "") {
+        document.getElementById('emails').innerHTML =" **Please fill the name field";
+        return false;
+      }
+      if (email.indexOf('@')<=0) {
+document.getElementById('emails').innerHTML =" **Please fill the valid email field";
+return false;
+      }
+      if (phone == "") {
+        document.getElementById('phones').innerHTML =" **Please fill the name field";
+        return false;
+      }
+       
+
+  return  alert("Your Feedback submitted");
+
+
+
+}
+</script>
+<h2 align="center">**VISIT OUR STORE AT**</h2>
+<div class="first">
+  <ul>
+                <li><a href="#" style="color: black;font-size:25px; font-family: 'Courier New '; text-decoration: none;">MUMBAI:<strong> 101, Near Jhu Beach, Mumbai</strong></a>
+                <li><a href="#"style="color: black;font-size:25px; font-family: 'Courier New '; text-decoration: none;">NASHIK :<strong> 123, ROSE CHS, Indira Nagar, Nashik</strong></a>
+                <li><a href="#"style="color: black;font-size:25px; font-family: 'Courier New '; text-decoration: none;">PUNE  :<strong> Lane 2, near CCOEW, karvenagar, Pune</strong></a></li>
+                
+              </ul>
+
+</div>
+<h2 align="center">***Follow Us On***</h2>
+<div class="c5">
+  
+  <a href="#" style="padding-right: 10px;padding-left: 120px;"><img src="\Images\facebook.png" width="60" height="60"></a>
+  <a href="#" style="padding-right: 10px;padding-left: 20px;"><img src="\Images\Twitter.png" width="60" height="60"></a>
+  <a href="#" style="padding-right: 10px;padding-left: 20px;"><img src="\Images\insta.png" width="60" height="60"></a>
+
+</div>
+
+<h2 align="center">***Contact Us On***</h2>
+<div class="c5">
+  
+  <a href="#" style="padding-right: 10px;padding-left: 20px;text-decoration: none; color: black;font-size: 25px;"><img src="/Images/whatsapp.png" width="20" height="20"> +91 78555588</a>
+  <a href="#" style="padding-right: 10px;padding-left: 20px;text-decoration: none;color: black;font-size: 25px;"><img src="/Images/mail.png" width="20" height="20"> cubiescake@g.com</a>
+ 
+</div>
+
+
+
+<footer><%- include('../partials/footer'); %></footer>
+</body>
+</head>
